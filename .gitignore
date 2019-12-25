@@ -1,0 +1,6 @@
+# gitignore template for Hupntech Service Incoporated
+# website: https://www.hupntech.com
+
+# Ignore node_modules files that are auto-generated
+node_modules
+

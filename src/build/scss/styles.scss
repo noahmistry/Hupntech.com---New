@@ -1,0 +1,96 @@
+// Boostrap 4 //
+@import "./partials/media";
+// Google Fonts //
+@import url('https://fonts.googleapis.com/css?family=Roboto|Space+Mono|Work+Sans&display=swap');
+ 
+// Font-Variables //
+$font-body: 'Space Mono','Roboto';
+$font-headings:'Roboto','Work Sans';
+$body-font-size: 1.45rem;
+
+// BG-Colors //
+$bg-white:white;
+$bg-green:#87C23F;
+$bg-teal:#69C7B2;
+$bg-orange:#FBAF18;
+$bg-red:#E55B23;
+$bg-blue:#45C1E6;
+
+
+
+body,html{
+    height:100%;
+}
+
+a {
+    &:hover {
+        color: $bg-white;
+    }
+}
+
+.inner {
+    margin-bottom: 10%;
+}
+
+.bg-body-img {
+    background:url('/assets/images/background/imageedit_0_7466230878.png') center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.cover-heading {
+    font-family: $font-headings;
+}
+.lead {
+    font-family: $font-body;
+    font-size: $body-font-size;
+}
+
+.fa-linkedin {
+    color: $bg-red;
+    &::before{
+        font-size:1.2rem !important;
+        padding: 10px;
+    }
+    &:hover{
+        color: $bg-blue;
+    }
+}
+.fa-envelope,
+.fa-mobile-alt {
+    color: $bg-red;
+    &::before{
+        font-size: 2rem;
+        padding: 15px;
+        margin: 0;
+    }
+}
+
+.list-group-item {
+    border:none;
+    text-decoration: none;
+    background: none;
+    a {
+        text-decoration: none;
+    }
+}
+.onDisplay {
+    color: $bg-blue;
+    &:hover {
+        text-decoration: none;
+        color: $bg-blue;
+        border-bottom: 2px solid $bg-blue;
+        transition: border-bottom 200ms ease-in-out;
+    }
+
+}
+
+.hvr-clr {
+    letter-spacing: .1rem;
+    &:hover{
+        text-decoration: none;
+        color:$bg-white;
+        border-bottom: 2px solid $bg-blue;
+        transition: all 200ms ease-in-out;
+    }
+}
+
